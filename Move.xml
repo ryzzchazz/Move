@@ -58,7 +58,43 @@
                                                   </block>
                                                 </value>
                                                 <next>
-                                                  <block type="movement_stop" id="38"></block>
+                                                  <block type="movement_left" id="168">
+                                                    <next>
+                                                      <block type="robot_delay" id="181" inline="true">
+                                                        <value name="DELAY">
+                                                          <block type="math_number" id="188">
+                                                            <field name="NUM">500</field>
+                                                          </block>
+                                                        </value>
+                                                        <next>
+                                                          <block type="movement_right" id="179">
+                                                            <next>
+                                                              <block type="robot_delay" id="190" inline="true">
+                                                                <value name="DELAY">
+                                                                  <block type="math_arithmetic" id="197" inline="true">
+                                                                    <field name="OP">ADD</field>
+                                                                    <value name="A">
+                                                                      <block type="math_number" id="213">
+                                                                        <field name="NUM">500</field>
+                                                                      </block>
+                                                                    </value>
+                                                                    <value name="B">
+                                                                      <block type="math_number" id="223">
+                                                                        <field name="NUM">1000</field>
+                                                                      </block>
+                                                                    </value>
+                                                                  </block>
+                                                                </value>
+                                                                <next>
+                                                                  <block type="movement_stop" id="38"></block>
+                                                                </next>
+                                                              </block>
+                                                            </next>
+                                                          </block>
+                                                        </next>
+                                                      </block>
+                                                    </next>
+                                                  </block>
                                                 </next>
                                               </block>
                                             </next>
